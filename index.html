@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sahiraahi · Know what's true before you arrive</title>
+<meta name="description" content="Sahiraahi is a women-first travel companion for India. Cafés, eateries and clinics checked in person, with who checked each listing and when. Launching end of November 2026 in Pune, Vijayawada and Guntur.">
+<link rel="canonical" href="https://sahiraahi.co.in/">
+<meta name="theme-color" content="#163b36">
+<link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sahiraahi">
+<meta property="og:title" content="Sahiraahi · Know what's true before you arrive">
+<meta property="og:description" content="Cafés, eateries and clinics checked in person. Every listing shows who checked it and when. Pune · Vijayawada · Guntur, end of November 2026.">
+<meta property="og:url" content="https://sahiraahi.co.in/">
+<meta property="og:image" content="https://sahiraahi.co.in/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600;700&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#163b36;--sun:#f2a65a;--rust:#d95c36;--sand:#efe9dc;--sage:#e3eadf;--rose:#f8dccf;--muted:#5c716a;--mint:#c9dbd4;--line:#dedcd3;--cream:#f7f4ee}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font:17px/1.6 Inter,system-ui,sans-serif;color:var(--ink);background:var(--cream);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img,svg{display:block;max-width:100%}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;letter-spacing:-.02em;line-height:1.08}
+h2{font-size:clamp(32px,4.4vw,48px);font-weight:800}
+h3{font-size:22px;font-weight:600;letter-spacing:-.01em}
+.kicker{font:700 12.5px Inter;letter-spacing:.16em;text-transform:uppercase;color:var(--rust);margin-bottom:14px}
+.lead{font-size:19px;color:#34524b;max-width:640px;margin-top:16px}
+section{padding:96px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;font:600 16px Inter;text-decoration:none;border-radius:999px;padding:14px 24px;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn.sun{background:var(--sun);color:var(--ink)}
+.btn.sun:hover{background:#f5b574}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.btn.ghost:hover{background:rgba(255,255,255,.08)}
+.btn.ink{background:var(--ink);color:#fff}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+
+/* header */
+header{position:absolute;inset:0 0 auto;z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;height:84px}
+.nav img{height:34px;width:auto}
+.nav .btn{padding:10px 18px;font-size:15px}
+
+/* hero */
+.hero{background:var(--ink);color:#fff;padding:150px 0 110px;position:relative;overflow:hidden}
+.hero .grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center}
+.pill{display:inline-block;background:var(--sun);color:var(--ink);font:700 12.5px Inter;letter-spacing:.12em;text-transform:uppercase;border-radius:999px;padding:9px 16px}
+.hero h1{font-size:clamp(46px,7vw,84px);font-weight:800;margin-top:26px}
+.hero h1 em{font-style:normal;color:var(--sun)}
+.hero .lead{color:var(--mint)}
+.hero .lead b{color:#fff;font-weight:600}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.route{position:absolute;left:0;right:0;bottom:26px;opacity:.7;pointer-events:none}
+.deva{position:absolute;right:-10px;top:96px;font:400 150px/1 'Tiro Devanagari Hindi',serif;color:rgba(255,255,255,.04);pointer-events:none;white-space:nowrap}
+
+/* listing card */
+.card{background:#fff;color:var(--ink);border-radius:26px;padding:26px 28px;box-shadow:0 30px 80px rgba(0,0,0,.28)}
+.ex{display:inline-block;background:var(--rust);color:#fff;font:700 11px Inter;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.card h3{font-size:26px;margin-top:14px}
+.card .sub{font-size:14.5px;color:var(--muted)}
+.checked{display:flex;gap:10px;align-items:center;margin-top:16px;background:var(--sage);border-radius:14px;padding:12px 14px;font-size:14.5px}
+.checked svg{flex:none}
+.sec{border-top:1.5px solid var(--line);margin-top:16px;padding-top:14px}
+.sec .t{font:700 11px Inter;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.row{display:flex;justify-content:space-between;align-items:baseline;font-size:14.5px;color:var(--muted)}
+.row b{font:800 24px Fraunces,serif;color:var(--ink);white-space:nowrap;margin-left:12px}
+.chip{display:inline-block;background:var(--rose);color:#7d3418;font:600 13.5px Inter;border-radius:999px;padding:6px 12px;margin:2px 6px 6px 0}
+.q{font:600 17px/1.35 Fraunces,serif;margin-top:4px}
+.nc{display:flex;justify-content:space-between;border:2px dashed #cfd0c5;border-radius:12px;padding:10px 14px;font-size:14.5px;color:var(--muted)}
+.nc b{color:var(--ink)}
+
+/* features */
+.features .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:48px}
+.f{background:#fff;border:1px solid var(--line);border-radius:22px;padding:28px 24px}
+.f .ico{width:52px;height:52px;border-radius:15px;display:grid;place-items:center;margin-bottom:20px}
+.f p{color:#34524b;font-size:15.5px;margin-top:8px}
+
+/* not checked */
+.honest{background:var(--ink);color:#fff}
+.honest .grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.honest h2 em{font-style:normal;color:var(--sun)}
+.honest .lead{color:var(--mint)}
+.honest .nc{background:#fff;font-size:17px;padding:16px 20px;margin-bottom:12px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:48px;counter-reset:s}
+.step{border-top:3px solid var(--sun);padding-top:20px}
+.step:before{counter-increment:s;content:counter(s);display:block;font:800 52px/1 Fraunces,serif;color:var(--sun);margin-bottom:12px}
+.step p{color:#34524b;font-size:15.5px;margin-top:6px}
+
+/* cities */
+.cities{background:var(--sun)}
+.cities .grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.cities .kicker{color:var(--ink)}
+.citylist{list-style:none;font:800 clamp(44px,6vw,72px)/1.12 Fraunces,serif;letter-spacing:-.03em}
+.citylist li{display:flex;align-items:center;gap:18px}
+.cities .lead{color:var(--ink)}
+.when{display:inline-block;margin-top:22px;background:var(--ink);color:#fff;border-radius:999px;padding:10px 18px;font:700 15px Inter}
+
+/* name */
+.name{text-align:center}
+.name .big{font:400 clamp(72px,11vw,128px)/1.15 'Tiro Devanagari Hindi',serif;color:var(--rust)}
+.name .say{color:var(--muted);margin-top:4px}
+.mean{display:flex;justify-content:center;gap:56px;margin-top:34px}
+.mean b{display:block;font:800 36px Fraunces,serif}
+.mean span{color:var(--muted)}
+.name .lead{margin:30px auto 0}
+
+/* final cta */
+.final{background:var(--sand);text-align:center}
+.final .lead{margin:16px auto 0}
+.final .ctas{justify-content:center}
+
+footer{background:var(--ink);color:var(--mint);padding:48px 0;font-size:14.5px}
+footer .row2{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer img{height:30px;width:auto}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{text-decoration:underline}
+.sos{color:#fff;font-weight:600}
+
+@media (max-width:900px){
+  section{padding:72px 0}
+  .hero{padding:124px 0 90px}
+  .hero .grid,.honest .grid,.cities .grid{grid-template-columns:1fr}
+  .features .grid{grid-template-columns:1fr 1fr}
+  .steps{grid-template-columns:1fr}
+  .deva,.route{display:none}
+}
+@media (max-width:560px){
+  body{font-size:16px}
+  .features .grid{grid-template-columns:1fr}
+  .nav .btn span{display:none}
+  .mean{gap:32px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="tick" viewBox="0 0 40 40"><circle cx="20" cy="20" r="20" fill="#163b36"/><path d="M12 20.5l5.5 5.5L28.5 15" fill="none" stroke="#f2a65a" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="pin" viewBox="0 0 100 100"><path d="M50 6C30.7 6 15 21.3 15 40.2 15 64 50 94 50 94S85 64 85 40.2C85 21.3 69.3 6 50 6Z" fill="#163b36"/><circle cx="50" cy="40" r="13" fill="#f2a65a"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a href="/" aria-label="Sahiraahi home"><img src="assets/logo-white.svg" alt="Sahiraahi" width="137" height="34"></a>
+    <a class="btn sun" href="https://www.instagram.com/sahiraahi/" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#ig"/></svg><span>Follow</span> @sahiraahi</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="deva" aria-hidden="true">सही राही</div>
+  <div class="wrap grid">
+    <div>
+      <span class="pill">End of November 2026 · Pune · Vijayawada · Guntur</span>
+      <h1>Know what's true <em>before you arrive.</em></h1>
+      <p class="lead">Sahiraahi is a women-first travel companion for India. We check cafés, eateries and clinics in person, and <b>every listing shows who checked it and when.</b></p>
+      <div class="ctas">
+        <a class="btn sun" href="https://www.instagram.com/sahiraahi/" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#ig"/></svg>Follow along on Instagram</a>
+        <a class="btn ghost" href="#how">How we check</a>
+      </div>
+    </div>
+    <div class="card" role="img" aria-label="Example listing, not a real place: checked in person by Ananya on Saturday 17 October, WiFi measured at 38 Mbps at the window table, women say comfortable solo, hours not checked.">
+      <span class="ex">Example · not a real place</span>
+      <h3>Example Café</h3>
+      <div class="sub">Café · Vijayawada</div>
+      <div class="checked"><svg width="28" height="28"><use href="#tick"/></svg><span>Checked in person by <b>Ananya</b> · <b>Sat 17 Oct</b></span></div>
+      <div class="sec"><div class="t">WiFi we measured</div><div class="row"><span>Sat 10:40 am · window table</span><b>38 Mbps</b></div></div>
+      <div class="sec"><div class="t">Women say</div><span class="chip">Comfortable solo</span><div class="q">“Had lunch alone with my laptop. Nobody hurried me.”</div></div>
+      <div class="sec"><div class="nc"><span>Hours</span><b>Not checked</b></div></div>
+    </div>
+  </div>
+  <svg class="route" viewBox="0 0 1440 120" preserveAspectRatio="none" width="100%" height="120" aria-hidden="true"><path d="M-20 90 C260 10 420 120 720 60 S1180 0 1460 70" fill="none" stroke="#f2a65a" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round"/></svg>
+</section>
+
+<section class="features" id="what">
+  <div class="wrap">
+    <div class="kicker">Checked, not claimed</div>
+    <h2>Every place says great food and fast WiFi. We check.</h2>
+    <p class="lead">In a new city you mostly go on someone's word. Sahiraahi shows you what was actually checked, by whom, and when.</p>
+    <div class="grid">
+      <div class="f">
+        <div class="ico" style="background:var(--sage)"><svg width="26" height="26"><use href="#tick"/></svg></div>
+        <h3>Who checked it, and when</h3>
+        <p>Every listing shows the person who checked it and the date, right at the top.</p>
+      </div>
+      <div class="f">
+        <div class="ico" style="background:var(--sand)"><svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke="#163b36" stroke-width="10" stroke-linecap="round" aria-hidden="true"><path d="M12 40a54 54 0 0 1 76 0"/><path d="M25 54a35 35 0 0 1 50 0"/><path d="M38 67a16 16 0 0 1 24 0"/><circle cx="50" cy="80" r="6" fill="#163b36" stroke="none"/></svg></div>
+        <h3>WiFi we measured</h3>
+        <p>At work-friendly cafés and eateries: the speed, where in the café we tested, and the time and date.</p>
+      </div>
+      <div class="f">
+        <div class="ico" style="background:#dbe7ef"><svg width="26" height="26" viewBox="0 0 100 100" fill="none" stroke="#163b36" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="12" y="12" width="76" height="76" rx="20"/><path d="M50 32v36M32 50h36"/></svg></div>
+        <h3>Clinics confirmed by phone</h3>
+        <p>We call the clinics we list and note what they told us, with the date we called. We don't give medical advice.</p>
+      </div>
+      <div class="f">
+        <div class="ico" style="background:var(--rose)"><svg width="28" height="28" viewBox="0 0 100 100" fill="none" stroke="#163b36" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 22h64a8 8 0 0 1 8 8v34a8 8 0 0 1-8 8H46L28 86V72H18a8 8 0 0 1-8-8V30a8 8 0 0 1 8-8Z"/></svg></div>
+        <h3>Women say</h3>
+        <p>What women who visited said about their own visit. Their words, not our promise. We never call a place “safe”.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="honest">
+  <div class="wrap grid">
+    <div>
+      <h2>If we haven't checked it, it says <em>“not checked.”</em></h2>
+      <p class="lead">We'd rather tell you we don't know than make something up. No test yet means no number.</p>
+    </div>
+    <div>
+      <div class="nc"><span>WiFi</span><b>Not tested</b></div>
+      <div class="nc"><span>Hours</span><b>Not checked</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="kicker">Behind every listing</div>
+    <h2>How a café gets on Sahiraahi</h2>
+    <div class="steps">
+      <div class="step"><h3>We go in person.</h3><p>Someone from Sahiraahi visits. No copying lists off the internet.</p></div>
+      <div class="step"><h3>We test the WiFi.</h3><p>At work-friendly cafés we run a speed test at a table and note where we sat and when.</p></div>
+      <div class="step"><h3>The listing goes up.</h3><p>Showing who checked it and the date, so you can judge how fresh it is.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="cities" id="cities">
+  <div class="wrap grid">
+    <div>
+      <div class="kicker">Where we start</div>
+      <ul class="citylist">
+        <li><svg width="48" height="48" aria-hidden="true"><use href="#pin"/></svg>Pune</li>
+        <li><svg width="48" height="48" aria-hidden="true"><use href="#pin"/></svg>Vijayawada</li>
+        <li><svg width="48" height="48" aria-hidden="true"><use href="#pin"/></svg>Guntur</li>
+      </ul>
+      <span class="when">Launching end of November 2026</span>
+    </div>
+    <div>
+      <p class="lead">We check every place in person, so we're starting with three cities and doing them properly. More cities come after.</p>
+      <div class="ctas"><a class="btn ink" href="https://ig.me/m/sahiraahi" rel="noopener">Tell us your city on Instagram</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="name">
+  <div class="wrap">
+    <div class="kicker">The name</div>
+    <div class="big" lang="hi">सही राही</div>
+    <div class="say">Sahiraahi · said sa-hee raa-hee</div>
+    <div class="mean"><div><b>sahi</b><span>right, true</span></div><div><b>raahi</b><span>traveller</span></div></div>
+    <p class="lead">The right traveller: the one who walks into a new city already knowing what's true. Built first for women who travel, useful for everyone.</p>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <h2>Be first to know when we launch.</h2>
+    <p class="lead">We're posting as we check places in Pune, Vijayawada and Guntur.</p>
+    <div class="ctas"><a class="btn ink" href="https://www.instagram.com/sahiraahi/" rel="noopener"><svg width="18" height="18" aria-hidden="true"><use href="#ig"/></svg>Follow @sahiraahi</a></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap row2">
+    <img src="assets/logo-white.svg" alt="Sahiraahi" width="121" height="30">
+    <span>Instagram <a href="https://www.instagram.com/sahiraahi/" rel="noopener">@sahiraahi</a></span>
+    <span class="sos">In an emergency in India, call 112</span>
+    <span>© 2026 Sahiraahi</span>
+  </div>
+</footer>
+</body>
+</html>
